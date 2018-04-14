@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>  
+    @await Html.PartialAsync("/Views/PartialViews/HeadPartial.cshtml")
+</head>
+<body>
+    <div class="overlay">
+        @await Html.PartialAsync("/Views/PartialViews/NavbarPartial.cshtml")
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+    </div>
+    @await Html.PartialAsync("/Views/PartialViews/FooterPartial.cshtml")
+
+    @await Html.PartialAsync("/Views/PartialViews/ScriptsPartial.cshtml")
+</body>
+</html>

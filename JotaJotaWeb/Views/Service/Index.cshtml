@@ -1,0 +1,22 @@
+﻿<div class="jumbotron jumb-cont">
+    <h2>Productos</h2>
+    <p>Encuentra todos los productos</p>
+    @foreach (var service in Model.Services)
+    {
+
+    <div class="card card-resize text-white bg-dark d-inline-block mb-3 mr-3">
+        <img class="card-img-top" src="@service.ImagePath" alt="service.alt">
+        <div class="card-body">
+            <h5 class="card-title">@service.Name</h5>
+            <p class="card-text">@service.Description</p>
+        </div>
+        <div class="card-footer card-show-footer">
+            <a asp-controller="Contact" asp-action="Index" class="btn btn-primary btn-sm">Llamanos</a>
+        </div>
+    </div>
+    }
+</div>
+
+
+
+

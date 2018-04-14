@@ -1,0 +1,14 @@
+﻿
+@foreach (var product in Model.Products)
+{
+    
+        <div class="card border-primary d-inline-block mb-3 mr-3" style="width: 18rem;">
+            <img class="card-img-top" src="@product.ImagePath" alt="@product.AltTag">
+            <div class="card-body">
+                <h5 class="card-title">@product.Name</h5>
+                <p class="card-text">@product.Description</p>
+            </div>
+        </div>
+
+    
+}

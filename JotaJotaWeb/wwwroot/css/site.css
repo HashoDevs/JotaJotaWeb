@@ -1,0 +1,93 @@
+﻿/*Site CSS given by Microsoft for web application asp.net core 2 mvc template*/
+body {
+    
+    }
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+
+@media screen and (max-width: 600px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+
+    .card-caption {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 420px) {  
+    .card-resize {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card-resize {
+        width: 13rem;
+    }
+}
+
+
+@media (min-width: 420px) {
+    .jumbotron .jumb-cont {
+        padding: 2rem 2rem;
+    }
+
+    .card-resize {
+        width: 18rem;
+    }
+
+    
+}
+
+/*-----------------------------------------Mis clases----------------------------------------------*/
+.jumb-cont {
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+}
+
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.service-card {
+    text-align:justify;
+}
+
+.card-show-footer {
+    height: 4rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+

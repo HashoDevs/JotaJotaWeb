@@ -1,0 +1,18 @@
+﻿<div class="jumbotron jumb-cont"> 
+    <h2>Productos</h2>
+    <p>Encuentra todos los productos</p>
+            @foreach (var product in Model.Products)
+            {
+                <div class="card card-resize text-white bg-dark d-inline-block mb-3 mr-3">
+                    <img class="card-img-top" src="@product.ImagePath" alt="@product.AltTag">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                    </div>
+                    <div class="card-footer card-show-footer">
+                        <a asp-controller="Contacto" asp-action="Index" class="btn btn-primary btn-sm">Cotizar</a>
+                    </div>
+                </div>
+            }
+</div>
+    

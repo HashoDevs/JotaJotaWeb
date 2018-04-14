@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutContact.cshtml";
+}
+@model Contact
+
+
+
+
+
+
+<div>
+    <!-- Button trigger modal -->
+
+    <div class="float-left ghost">
+        <a asp-action="Index" asp-controller="Home">
+            <i class="fas fa-arrow-left fa-2x m-3" style="color: white;"></i>
+        </a>
+    </div>
+
+    <div class="float-right ghost">
+        <i class="fas fa-sign-in-alt fa-2x m-3" style="color: white;" data-toggle="modal" data-target=".contact-modal"></i>
+    </div>
+    <!-- Modal -->
+
+
+    <div class="modal fade contact-modal" style="overflow-y: hidden;" tabindex="-1" role="form" aria-labelledby="ContactModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dejanos tus datos y te contactaremos a la brevedad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="text-center form-signin-class">
+                    <form asp-action="Index" method="post" class="form-signin" role="form">
+                        <img class="mb-4" src="~/images/JJ Logo.png" alt="" height="130">
+
+
+                        <div class="form-group">
+                            <label asp-for="Nombre" class="sr-only">Nombre</label>
+                            <input asp-for="Nombre" class="form-control" placeholder="Nombre" required autofocus data-toggle="tooltip" data-html="true" title="Nombre completo" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="sr-only">Email</label>
+                            <input asp-for="Email" class="form-control" placeholder="Email" required autofocus data-toggle="tooltip" data-html="true" title="ejemplo@ejemplo.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Telefono" class="sr-only">Telefono</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">+52</div>
+                                </div>
+                                <input asp-for="Telefono" class="form-control" placeholder="Telefono" required autofocus data-toggle="tooltip" data-html="true" title="555-555-00-00" />
+                            </div>
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Mensaje" class="sr-only">Mensaje</label>
+                            <textarea asp-for="Mensaje" class="form-control" placeholder="Aqui tu mensaje" required autofocus data-toggle="tooltip" data-html="true" title="Cuentanos de que trata tu proyecto">
+                            </textarea>
+                            <span asp-validation-for="Mensaje" class="text-danger"></span>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LevulEUAAAAAGaI5hu7_OvZe8fnrg0s5yaEDWPh"></div>
+                        <div class="form-group">
+
+                           
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------Contact Form-------------->
+
+</div>

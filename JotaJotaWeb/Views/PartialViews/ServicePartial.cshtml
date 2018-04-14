@@ -1,0 +1,11 @@
+﻿@foreach (var service in Model.Services)
+{
+
+    <div class="card border-primary d-inline-block mb-3 mr-3" style="width: 18rem;">
+        <img class="card-img-top" src="@service.ImagePath" alt="@service.AltTag">
+        <div class="card-body">
+            <h5 class="card-title">@service.Name</h5>
+            <p class="card-text">@service.Description</p>
+        </div>
+    </div>
+}

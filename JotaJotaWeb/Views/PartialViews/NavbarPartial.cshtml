@@ -1,0 +1,46 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #292c2f">
+    <!--Navbar Brand-->
+    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+        <img src="~/images/JJ Logo.png" height="30" alt="JJ Electrocomercial" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            @*Inicio*@
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio </a>
+            </li>
+            @*Empresa*@
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Home" asp-action="About">Empresa </a>
+            </li>
+            @*Catalogo*@
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Product" asp-action="Index">Catalogo </a>
+            </li>
+            @*Servicios*@
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Service" asp-action="Index">Servicios </a>
+            </li>
+            @*Contacto*@
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Contact" asp-action="Index">Contacto</a>
+            </li>
+        </ul>
+        @*CTO Whatsapp*@
+        <div class="nav-item">
+            <a class="btn btn-success p-1 mr-1" href="https://api.whatsapp.com/send?phone=526143586028&text=Me%20gustaria%20se%20comuniquen%20conmigo%20por%20favor">
+                Contactanos via whatsapp
+                <img src="~/images/whatsapp-logo.svg" width="25" height="25" alt="" />
+            </a>
+        </div>
+        @*Search*@
+        @*<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>*@
+    </div>
+</nav>

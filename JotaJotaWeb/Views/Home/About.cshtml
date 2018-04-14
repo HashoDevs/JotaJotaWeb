@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "J&J Electrocomercial";
+}
+
+
+<div class="jumbotron bg-dark jumb-cont">
+    <div class="card text-white mb-3">
+        <img class="card-img" src="~/images/DarkBlueSky.png" alt="JJ Electrocomercial">
+        <div class="card-img-overlay">
+            <h1 class="card-title">@ViewData["Title"]</h1>
+            <hr />
+            <h3 class="card-text">Brindamos soluciones electro-mecanicas que se ajustan a las necesidades de tu proyecto.</h3>
+            <p class="card-text">Somos una empresa 100% Chihuahuense con mas de 30 años de experiencia en el sector electro-mecanico.</p>
+        </div>
+    </div>
+    @*<h2>@ViewData["Title"]</h2>
+    <p>Brindamos soluciones electro-mecanicas que se ajustan a las necesidades de tu proyecto.</p>*@
+    <div class="row">
+        <div class="nav flex-column nav-pills col-12 col-sm-12 col-md-3 col-lg-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Nosotros</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mision</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Valores</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Localizacion</a>
+        </div>
+        <div class="tab-content col" id="v-pills-tabContent">
+            <!--Pill 1-->
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="card mb-3">
+                    <img class="card-img-top card-caption" src="~/images/Slider_5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Nos enorgullece ser tu aliado</h5>
+                        <p class="card-text service-card">
+                            Nuestro compromiso es contigo y tu proyecto. Te proveemos desde un tornillo hasta equipamiento especializado para construcciones electromecanicas agricolas, industriales o domesticas.
+                            <br /> Ademas, te ofrecemos servicios de construccion, asesoria, tramites ante autoridades y mas, no dudes en consultarnos acerca de tu proyecto.
+                        </p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+            <!--Pill 2-->
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="card mb-3">
+                    <img class="card-img-top card-caption" src="~/images/Birds.png" alt="Cable media tension">
+                    <div class="card-body row">
+                        <div class="col-sm">
+                            <div class="media mb-2">
+                                <i class="fas fa-bullseye fa-2x mr-3"></i>
+                                <h3 class="card-title">Mision</h3>
+                            </div>
+                            <p class="card-text service-card">Nuestra mision es acompañarte en tu proyecto brindandote material y equipo electrico al mejor precio y justo cuando lo necesites</p>
+                        </div>
+                        <div class="col-sm">
+                            <div class="media mb-2">
+                                <i class="fas fa-compass fa-2x mr-3"></i>
+                                <h3 class="card-title">Vision</h3>
+                            </div>
+                            <p class="card-text service-card">Ser el aliado <b>#1</b> en tu proyecto o empresa y ayudarte a agregar valor a traves de exitosas obras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pill 3-->
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="card mb-3">
+                    <img class="card-img-top card-caption" src="~/images/Poste.png" alt="Posteria">
+                    <h4>Nos definimos con estos valores</h4>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm m-2">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="far fa-handshake"></i>
+                                        </span>
+                                        <h5>Servicio</h5>
+                                    </li>
+                                </ul>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-flag-checkered"></i>
+                                        </span>
+                                        <h5>Eficiencia</h5>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm m-2">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-chess-rook"></i>
+                                        </span>
+                                        <h5>Garantia</h5>
+                                    </li>
+                                </ul>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-hand-holding-heart"></i>
+                                        </span>
+                                        <h5>Fiabilidad</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm m-2">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="far fa-check-circle"></i>
+                                        </span>
+                                        <h5>Satisfaccion</h5>
+                                    </li>
+                                </ul>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-hand-holding-usd"></i>
+                                        </span>
+                                        <h5>Competitividad</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pill 4-->
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div>
+                    <div>
+                        <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6496.5403465236295!2d-105.46340443515501!3d28.183609188434506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86eb15a239e25d81%3A0xbfa9dba4a05104c6!2sElectrocomercial+J%26J!5e0!3m2!1ses-419!2smx!4v1523131514593" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-caption text-white">
+                        <h2>Siempre cerca de ti</h2>
+                        <p>Estamos donde nos necesitas, deja que llevemos la solucion a donde tu proyecto. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
